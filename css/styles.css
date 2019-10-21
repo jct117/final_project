@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: gray;
+}
+
+
+
+#header {
+    padding: 35px;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+/*      border: solid;*/ 
+    background-image: url("../img/dndBanner.jpg");
+    background-size: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+    
+}
+
+#name {
+    padding: 20px;
+/*    border: solid; */
+    background: white;
+}
+
+#progressBar {
+    padding: 10px;
+/*    border: solid;  */
+    text-align: center;
+    background: white;
+}
+
+#container {
+    display: flex;
+    align-content: center;
+    background: white
+  
+    
+}
+
+#leftButton {
+/*  float: left;*/
+    max-width: 15%;
+    margin-top: 100px;
+    height: 200px; /* only for demonstration, should be removed */
+/*    background: #ccc;*/
+/*    padding: 20px;*/
+/*    border: solid;*/
+    margin:auto;
+    
+}
+#rightButton {
+/*  float: flex;*/
+    max-width: 15%; 
+    margin-top: 100px;
+    height: 200px; /* only for demonstration, should be removed */
+/*    background: #ccc;*/
+/*    padding: 20px;*/
+/*    border: solid;*/
+    margin:auto;
+}
+
+#main {
+    float: left;
+    padding: 10px;    
+    width: 80%;
+    height: 500px;
+    /*border: solid;*/
+}
+
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#footer {
+    padding: 35px;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+/*    border: solid;*/
+    background: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+
+.notes {
+    float: right;
+/*     border: solid;*/
+    margin: 2% 5% 100% 5%;
+    height: 80%;
+    min-width: 20%;
+    max-width: 45%;
+    
+}
+
+.nav:hover {
+    transform: scale(1.08); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    margin: auto;
+}
+
+label {
+    padding-right: 10px;
+    font-size: 1rem;
+    width: 50px;
+    margin: auto;
+}
+
+
