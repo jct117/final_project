@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-    
+
 }
 
 body {
@@ -8,39 +8,46 @@ body {
     margin-left: 5%;
     margin-right: 5%;
     background-repeat: no-repeat;
-    background-image: linear-gradient(gray, white);
+    background-image: linear-gradient(black, white);
     height: 100%;
-    
-    
+    min-width: 1200px;
 }
 
 
 
 #header {
     padding: 80px;
-    text-align: left;
+    text-align: center;
     font-size: 35px;
     color: white;
-/*      border: solid;*/ 
-    background-image: url("../img/dndBanner.jpg");
-    background-size: 100%;
     width: 100%;
     height: 100%;
-    background-repeat: no-repeat;
-    position: relative;
-    background-position: center;
-    
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    
-    
-    
+    background-image: url("../img/dndBanner.jpg");
+    background-size: 90%;
+    background-repeat:repeat-x;
+    position:inherit;
+    background-position: center center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#header h2 {
+    background: black;
+    opacity: .6;
+    font-weight: bold;
+    max-width: 1060px;
+    margin: auto;
 }
 
 #name {
     padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+
 /*    border: solid; */
     background: white;
+    text-align: center;
+    background-image: linear-gradient(transparent, white);
 }
 
 #progressBar {
@@ -48,40 +55,46 @@ body {
 /*    border: solid;  */
     text-align: center;
     background: white;
+
 }
 
 #container {
     display: flex;
     align-content: center;
-    background: white;  
-    
+    background: white;
+
+
 }
 
 #leftButton {
 
     max-width: 15%;
-    margin-top: 100px;   
+    margin-top: 100px;
 /*    border: solid;*/
     margin:auto;
-   
-     
+
+
 }
 
 #rightButton {
 
-    max-width: 15%; 
-    margin-top: 100px;    
+    max-width: 15%;
+    margin-top: 100px;
 /*    border: solid;*/
     margin:auto;
-    
+
 }
 
 #main {
     float: left;
-    padding: 10px;    
+    padding: 10px;
     width: 80%;
     height: 500px;
-    /*border: solid;*/
+/*    border: solid;*/
+    border-color: dimgrey;
+    border-radius: 15px;
+    border-width: 1px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -94,13 +107,14 @@ section:after {
 #footer {
     padding: 35px;
     text-align: center;
-    font-size: 35px;
+    font-size: 15px;
     color: black;
 /*    border: solid;*/
     background: white;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    
+
+
 }
 
 .notes {
@@ -110,7 +124,7 @@ section:after {
     height: 80%;
     min-width: 20%;
     max-width: 45%;
-    
+
 }
 
 .nav {
@@ -135,6 +149,3 @@ label {
     width: 50px;
     margin: auto;
 }
-
-
-
