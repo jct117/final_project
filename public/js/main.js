@@ -7,6 +7,8 @@ $(function () {
     setTimeout(function(){ $("#main").fadeIn(500)}, 400);
 
     console.log("right button clicked")
+
+    app.get('/class')
   })
 
   $('#leftButton').click(() => {
@@ -14,6 +16,10 @@ $(function () {
     setTimeout(function(){ $("#main").fadeIn(500)}, 400);
     console.log("left button clicked")
   })
+
+
+
+
 
 
 })

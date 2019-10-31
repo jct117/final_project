@@ -1,0 +1,91 @@
+<div id="leftButton"><button class="navArrow"><a class="link" href="/background"><img src="img/chevron-left.png"></a></button> </div>
+<div id="main">
+        <content class="class">
+          <div id="win4" class="contour" style="display: block;">
+
+			<h2>Level</h2><p>Choose the character level.</p>
+			<table class="carac alignPV"><tbody><tr>
+				<td class="plusmoinsG"><i class="bCarac fas fa-minus-square" onclick="changeNiveau(-1)"></i></td>
+				<td id="level" class="valeurcarac caracbrut">1</td>
+				<td class="plusmoinsD"><i class="bCarac fas fa-plus-square" onclick="changeNiveau( 1)"></i></td>
+			</tr></tbody></table>
+
+			<hr><h2>Ability Scores</h2><p>Assign the 6 Ability Scores.</p>
+			<table class="carac">
+				<tbody>
+                    <tr id="carac">
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Brut<br>Score</th>
+                        <th></th>
+                        <th>Racial<br>Bonus</th>
+                        <th>Final<br>Score</th>
+                    </tr>
+                    <tr>
+                        <td class="nomcarac">
+                            <strong>Strength</strong></td>
+                        <td class="plusmoinsG">
+                            <i class="bCarac fas fa-minus-square" onclick="changeCarac(-1, 0)"></i>
+                        </td>
+                        <td id="carac_brut_0" class="valeurcarac caracbrut">10</td>
+                        <td class="plusmoinsD"><i class="bCarac fas fa-plus-square" onclick="changeCarac( 1, 0)"></i></td>
+                        <td id="carac_race_0" class="valeurcarac">+1</td>
+                        <td id="carac_0" class="valeurcarac caracfinal">11 (+0)</td>
+                    </tr>
+                    <tr>
+                        <td class="nomcarac">
+                            <strong>Dexterity</strong></td>
+                        <td class="plusmoinsG">
+                            <i class="bCarac fas fa-minus-square" onclick="changeCarac(-1, 1)"></i></td>
+                        <td id="carac_brut_1" class="valeurcarac caracbrut">10</td><td class="plusmoinsD">
+                        <i class="bCarac fas fa-plus-square" onclick="changeCarac( 1, 1)"></i></td>
+                        <td id="carac_race_1" class="valeurcarac">+1</td>
+                        <td id="carac_1" class="valeurcarac caracfinal">11 (+0)</td></tr>
+                    <tr><td class="nomcarac"><strong>Constitution</strong></td>
+                        <td class="plusmoinsG">
+                            <i class="bCarac fas fa-minus-square" onclick="changeCarac(-1, 2)"></i></td>
+                        <td id="carac_brut_2" class="valeurcarac caracbrut">10</td><td class="plusmoinsD">
+                        <i class="bCarac fas fa-plus-square" onclick="changeCarac( 1, 2)"></i></td>
+                        <td id="carac_race_2" class="valeurcarac">+1</td>
+                        <td id="carac_2" class="valeurcarac caracfinal">11 (+0)</td>
+                    </tr>
+                    <tr>
+                        <td class="nomcarac"><strong>Intelligence</strong></td>
+                        <td class="plusmoinsG"><i class="bCarac fas fa-minus-square" onclick="changeCarac(-1, 3)">
+                            </i></td><td id="carac_brut_3" class="valeurcarac caracbrut">10</td>
+                        <td class="plusmoinsD">
+                        <i class="bCarac fas fa-plus-square" onclick="changeCarac( 1, 3)"></i></td>
+                        <td id="carac_race_3" class="valeurcarac">+1</td><td id="carac_3" class="valeurcarac caracfinal">11 (+0)</td>
+                    </tr>
+                    <tr><td class="nomcarac"><strong>Wisdom</strong></td>
+                        <td class="plusmoinsG"><i class="bCarac fas fa-minus-square" onclick="changeCarac(-1, 4)"></i></td>
+                        <td id="carac_brut_4" class="valeurcarac caracbrut">10</td>
+                        <td class="plusmoinsD"><i class="bCarac fas fa-plus-square" onclick="changeCarac( 1, 4)"></i></td>
+                        <td id="carac_race_4" class="valeurcarac">+1</td>
+                        <td id="carac_4" class="valeurcarac caracfinal">11 (+0)</td>
+                    </tr>
+                    <tr><td class="nomcarac"><strong>Charisma</strong></td>
+                        <td class="plusmoinsG"><i class="bCarac fas fa-minus-square" onclick="changeCarac(-1, 5)"></i></td>
+                        <td id="carac_brut_5" class="valeurcarac caracbrut">10</td>
+                        <td class="plusmoinsD"><i class="bCarac fas fa-plus-square" onclick="changeCarac( 1, 5)"></i></td>
+                        <td id="carac_race_5" class="valeurcarac">+1</td>
+                        <td id="carac_5" class="valeurcarac caracfinal">11 (+0)</td>
+                    </tr>
+
+			</tbody></table>
+
+			<br>
+			<div id="comptePts">Points cost: </div><div id="numPts"><strong>12</strong>/27 &nbsp; &nbsp; &nbsp; &nbsp;</div>
+			<br>
+
+
+		</div>
+        </content>
+
+
+      <div id="notes">Description
+          <p>kjhfgklfjgklfjgkflsdjgklfjgjfdkgjlkfdjgkljflgksjfdklgjkfljglkfdjgklfdjglkdjsfglkfjglkfdjgslkdfjglkfjdglkjdflkgjfdlkjgkldfjglkdfjgkldjg</p>
+          </div>
+      </div>
+      <div id="rightButton"><button class="navArrow"><a class="link" href="/proficiencies"><img src="img/chevron-right.png"></a></button></div>
