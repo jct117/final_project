@@ -27,28 +27,32 @@ app.get('/', (req, res, next) => {
 
 
   res.render('home', {
-
+    progressBar:'<a href="/"><li class="active"></li></a>'
   })
-})
-
-app.get('/about', (req, res, next) => {
-  // "render" the template named "home" in our views folder
-  res.render('about')
 })
 
 app.get('/proficiencies', (req, res, next) => {
   // "render" the template named "home" in our views folder
-  res.render('proficiencies')
+  res.render('proficiencies', {
+    next: "/ability",
+    previous: "/class"
+  })
 })
 
 app.get('/class', (req, res, next) => {
   // "render" the template named "home" in our views folder
-  res.render('class')
+  res.render('class', {
+    next: "/background",
+    previous: "/race"
+  })
 })
 
 app.get('/ability', (req, res, next) => {
   // "render" the template named "home" in our views folder
-  res.render('ability')
+  res.render('ability', {
+    next: "/proficiencies",
+    previous: "/character"
+  })
 })
 
 app.get('/background', (req, res, next) => {
@@ -63,10 +67,16 @@ app.get('/background', (req, res, next) => {
 
 app.get('/character', (req, res, next) => {
   // "render" the template named "home" in our views folder
-  res.render('character')
+  res.render('character',{
+    next:"",
+    previous:""
+  })
 })
 
 app.get('/race', (req, res, next) => {
   // "render" the template named "home" in our views folder
-  res.render('race')
+  res.render('race', {
+    next: "/class",
+    previous: "/"
+  })
 })
