@@ -34,8 +34,8 @@ app.get('/', (req, res, next) => {
 app.get('/proficiencies', (req, res, next) => {
   // "render" the template named "home" in our views folder
   res.render('proficiencies', {
-    next: "/ability",
-    previous: "/class"
+    next: "/character",
+    previous: "/ability"
   })
 })
 
@@ -51,7 +51,7 @@ app.get('/ability', (req, res, next) => {
   // "render" the template named "home" in our views folder
   res.render('ability', {
     next: "/proficiencies",
-    previous: "/character"
+    previous: "/background"
   })
 })
 
