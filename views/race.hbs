@@ -1,31 +1,33 @@
 <div id="leftButton"><button class="navArrow"><a href="/"><img src="img/chevron-left.png"></a></button> </div>
-      <div id="main">
-        <content class="class">
-          <div id="win1" class="contour" style="">
+<div id="main" >
+        <content  class="class" data-page-number=1>
+          <div id="win1" class="contour">
 
       <h2>Character Name</h2>
-        <input type="text" id="characterName" placeholder="Choose a Name" />
+        <input type="text" id="characterName" placeholder="Characeter Name" />
 			<h2>Race</h2>
               <p>Choose the character Race.</p>
           <div id="wrapper">
             <div class="icone">
-              <img src="img/race_nain1.png" id="Hill Dawf" width="60" height="60" alt="" class="imgRChoix hillDawf"><br>Hill dwarf</div>
+              <img src="img/race_nain1.png" id="1" width="60" height="60" alt="" class="imgRChoix Dawf"><br>Dwarf</div>
             <div class="icone">
-                  <img src="img/race_highelf.png" id="High Elf" width="60" height="60" alt="" class="imgRChoix highElf"><br>High Elf</div>
+                  <img src="img/race_highelf.png" id="2" width="60" height="60" alt="" class="imgRChoix Elf"><br>Elf</div>
               <div class="icone">
-                  <img src="img/race_halfeling.png" id="Lightfoot Halfling" width="60" height="60" alt="" class="imgRChoix halfling"><br>Lightfoot Halfling</div>
+                  <img src="img/race_halfeling.png" id="3" width="60" height="60" alt="" class="imgRChoix Halfling"><br>Halfling</div>
               <div class="icone">
-                  <img src="img/race_humain.png" id="Human" width="60" height="60" alt="" class="imgRChoix human"><br>Human</div>
+                  <img src="img/race_humain.png" id="4" width="60" height="60" alt="" class="imgRChoix Human"><br>Human</div>
               <div class="icone">
-                  <img src="img/race_drakeide.png" id="Dragonborn" width="60" height="60" alt="" class="imgRChoix dragonBorn" ><br>Dragonborn</div>
+                  <img src="img/race_drakeide.png" id="5" width="60" height="60" alt="" class="imgRChoix Dragonborn" ><br>Dragonborn</div>
+              <p>
               <div class="icone">
-                  <img src="img/race_gnome2.png" id="Rock Gnome" width="60" height="60" alt="" class="imgRChoix rockGnome"><br>Rock Gnome</div>
+                  <img src="img/race_gnome2.png" id="6" width="60" height="60" alt="" class="imgRChoix rockGnome"><br>Gnome</div>
               <div class="icone"
-                   ><img src="img/race_demielfe.png" id="Half Elf" width="60" height="60" alt="" class="imgRChoix halfElf"><br>Half-Elf</div>
+                   ><img src="img/race_demielfe.png" id="7" width="60" height="60" alt="" class="imgRChoix halfElf"><br>Half-Elf</div>
               <div class="icone">
-                  <img src="img/race_demiorc.png" id="Half Orc" width="60" height="60" alt="" class="imgRChoix halfOrc"><br>Half Orc</div>
+                  <img src="img/race_demiorc.png" id="8" width="60" height="60" alt="" class="imgRChoix halfOrc"><br>Half Orc</div>
               <div class="icone">
-                  <img src="img/race_tieffelin.png" id="Tiefling" width="60" height="60" alt="" class="imgRChoix tiefling"><br>Tiefling</div>
+                  <img src="img/race_tieffelin.png" id="9" width="60" height="60" alt="" class="imgRChoix tiefling"><br>Tiefling</div>
+                </p>
 		          </div>
             </div>
 
@@ -33,9 +35,8 @@
         </content>
 
 
-      <div id="notes">Description
-          <p>pull from API</p>
+      <div><h3>Description</h3>
+          <p id="notes"></p>
           </div>
       </div>
       {{> rightnav url=next}}
-      

@@ -1,19 +1,19 @@
 {{> leftnav url=previous}}
 <div id="main">
-  <content class="class">
+  <content class="class" data-page-number=4>
     <div id="win4" class="contour" style="display: block;">
       <hr>
       <h2>Ability Scores</h2><p>Assign the 6 Ability Scores.</p>
 			   <table class="carac">
-           <tbody>
+           <tbody id="wrapper3">
              <tr id="carac">
                <tr>
                  <th></th>
                  <th></th>
-                 <th>Brut<br>Score</th>
+                 <th>Starting<br>Points</th>
                  <th></th>
-                 <th>Racial<br>Bonus</th>
-                 <th>Final<br>Score</th>
+                 <!-- <th>Racial<br>Bonus</th>
+                 <th>Final<br>Score</th> -->
                </tr>
                <tr>
                  <td class="nomcarac">
@@ -22,30 +22,32 @@
                   <td id="strengthMins" class="plusmoinsG">
                     <i class="bCarac fas fa-minus-square"></i>
                   </td>
-                  <td id="strength" class="valeurcarac caracbrut">10
+                  <td id="1" class="valeurcarac caracbrut">10
                   </td>
                   <td id="strengthPlus" class="plusmoinsD">
                     <i class="bCarac fas fa-plus-square"></i>
                   </td>
-                  <td id="carac_race_0" class="valeurcarac">+1
+                  <!-- <td id="strengthBonus" class="valeurcarac">+1
                   </td>
                   <td id="carac_0" class="valeurcarac caracfinal">11 (+0)
-                  </td>
+                  </td> -->
                 </tr>
                 <tr>
                   <td class="nomcarac">
                     <strong>Dexterity</strong>
                   </td>
-                  <td class="dexMins">
+                  <td id="dexMins" class="plusmoinsG">
                     <i class="bCarac fas fa-minus-square"></i>
                   </td>
-                  <td id="dexterity" class="valeurcarac caracbrut">10
+                  <td id="2" class="valeurcarac caracbrut">10
                   </td>
-                  <td class="dexPlus">
+                  <td id="dexPlus" class="plusmoinsD">
                     <i class="bCarac fas fa-plus-square"></i>
                   </td>
-                  <td id="carac_race_1" class="valeurcarac">+1</td>
-                  <td id="carac_1" class="valeurcarac caracfinal">11 (+0)</td>
+                  <!-- <td id="dexBonus" class="valeurcarac">+1
+                  </td>
+                  <td id="carac_1" class="valeurcarac caracfinal">11 (+0)
+                  </td> -->
                 </tr>
                 <tr>
                   <td class="nomcarac">
@@ -54,12 +56,14 @@
                   <td id="constMins" class="plusmoinsG">
                     <i class="bCarac fas fa-minus-square"></i>
                   </td>
-                  <td id="constitution" class="valeurcarac caracbrut">10</td>
-                  <td class="constPlus">
+                  <td id="3" class="valeurcarac caracbrut">10</td>
+                  <td id="constPlus" class="plusmoinsD">
                     <i class="bCarac fas fa-plus-square"></i>
                   </td>
-                  <td id="carac_race_2" class="valeurcarac">+1</td>
-                  <td id="carac_2" class="valeurcarac caracfinal">11 (+0)</td>
+                  <!-- <td id="constBonus" class="valeurcarac">+1
+                  </td>
+                  <td id="carac_2" class="valeurcarac caracfinal">11 (+0)
+                  </td> -->
                 </tr>
                 <tr>
                   <td class="nomcarac"><strong>Intelligence</strong>
@@ -67,14 +71,15 @@
                   <td id="intelMins" class="plusmoinsG">
                     <i class="bCarac fas fa-minus-square"></i>
                   </td>
-                  <td id="intelligence" class="valeurcarac caracbrut">10
+                  <td id="4" class="valeurcarac caracbrut">10
                   </td>
                   <td id="intelPlus" class="plusmoinsD">
                     <i class="bCarac fas fa-plus-square"></i>
                   </td>
-                  <td id="carac_race_3" class="valeurcarac">+1
+                  <!-- <td id="intelBonus" class="valeurcarac">+1
                   </td>
-                  <td id="carac_3" class="valeurcarac caracfinal">11 (+0)</td>
+                  <td id="carac_3" class="valeurcarac caracfinal">11 (+0)
+                  </td> -->
                 </tr>
                 <tr>
                   <td class="nomcarac"><strong>Wisdom</strong>
@@ -82,15 +87,15 @@
                   <td id="wisMins" class="plusmoinsG">
                     <i class="bCarac fas fa-minus-square"></i>
                   </td>
-                  <td id="wisdom" class="valeurcarac caracbrut">10
+                  <td id="5" class="valeurcarac caracbrut">10
                   </td>
                   <td id="wisPlus" class="plusmoinsD">
                     <i class="bCarac fas fa-plus-square"></i>
                   </td>
-                  <td id="carac_race_4" class="valeurcarac">+1
+                  <!-- <td id="wisdomBonus" class="valeurcarac">+1
                   </td>
                   <td id="carac_4" class="valeurcarac caracfinal">11 (+0)
-                  </td>
+                  </td> -->
                 </tr>
                 <tr>
                   <td class="nomcarac"><strong>Charisma</strong>
@@ -98,27 +103,28 @@
                   <td id="charMins" class="plusmoinsG">
                     <i class="bCarac fas fa-minus-square"></i>
                   </td>
-                  <td id="charisma" class="valeurcarac caracbrut">10
+                  <td id="6" class="valeurcarac caracbrut">10
                   </td>
-                  <td class="charPlus">
+                  <td id="charPlus"class="plusmoinsD">
                     <i class="bCarac fas fa-plus-square"></i>
                   </td>
-                  <td id="carac_race_5" class="valeurcarac">+1
+                  <!-- <td id="charBonus" class="valeurcarac">+1
                   </td>
                   <td id="carac_5" class="valeurcarac caracfinal">11 (+0)
-                  </td>
+                  </td> -->
                 </tr>
               </tbody>
             </table>
             <br>
             <div id="comptePts">Points cost: </div>
-            <div id="numPts"><strong>12</strong>/27 &nbsp; &nbsp; &nbsp; &nbsp;</div>
+            <div ><strong id="numPts">10</strong>/27 &nbsp; &nbsp; &nbsp; &nbsp;</div>
             <br>
           </div>
         </content>
-        <div id="notes">Description
-          <p>Word stuff</p>
-        </div>
+
+        <div><h3>Description</h3>
+            <p id="notes"></p>
+            </div>
       </div>
 
       {{> rightnav url=next}}

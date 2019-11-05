@@ -1,24 +1,21 @@
-<!-- <div id="leftButton"><button class="navArrow"><a class="link" href="{{previous}}"><img src="img/chevron-left.png"></a></button> </div> -->
 {{> leftnav url=previous}}
-<div id="main">
-  <content class="class">
-    <div id="win3" class="contour" style="display: block;">
-      <h2>Background</h2>
-        <p>Choose the character Background.</p>
-      <div id="wrapper2">
-			   <div class="icone"><img src="img/back_acolyte.png" id="Acolyte" width="60" height="60" alt="" class="imgBChoix"><br>Acolyte</div>
-         <div class="icone"><img src="img/back_criminel.png" id="Criminal" width="60" height="60" alt="" class="imgBChoix"><br>Criminal</div>
-         <div class="icone"><img src="img/back_peuple.png" id="Folk hero" width="60" height="60" alt="" class="imgBChoix"><br>Folk hero</div>
-         <div class="icone"><img src="img/back_noble.png" id="Noble" width="60" height="60" alt="" class="imgBChoix"><br>Noble</div>
-         <div class="icone"><img src="img/back_sage.png" id="Sage" width="60" height="60" alt="" class="imgBChoix"><br>Sage</div>
-         <div class="icone"><img src="img/back_soldat.png" id="Soldier" width="60" height="60" alt="" class="imgBChoix"><br>Soldier</div>
-      </div>
-      </div>
-		  </content>
-
-
-      <div class="notes">notes section
-          <p>Test words for stuff</p>
-          </div>
-      </div>
-      {{> rightnav url=next}}
+  <div id="main">
+    <content class="class" data-page-number=3>
+      <div id="win3" class="contour" style="display: block;">
+        <h2>Background</h2>
+          <p>Choose the character Background.</p>
+          <div id="wrapper2">
+			         <div class="icone"><img src="img/back_acolyte.png" id="Acolyte" width="60" height="60" alt="" class="imgBChoix"><br>Acolyte</div>
+               <div class="icone"><img src="img/back_criminel.png" id="Criminal" width="60" height="60" alt="" class="imgBChoix"><br>Criminal</div>
+               <div class="icone"><img src="img/back_peuple.png" id="Folk hero" width="60" height="60" alt="" class="imgBChoix"><br>Folk hero</div>
+               <div class="icone"><img src="img/back_noble.png" id="Noble" width="60" height="60" alt="" class="imgBChoix"><br>Noble</div>
+               <div class="icone"><img src="img/back_sage.png" id="Sage" width="60" height="60" alt="" class="imgBChoix"><br>Sage</div>
+               <div class="icone"><img src="img/back_soldat.png" id="Soldier" width="60" height="60" alt="" class="imgBChoix"><br>Soldier</div>
+             </div>
+           </div>
+         </content>
+         <div><h3>Description</h3>
+             <p id="notes"></p>
+             </div>
+        </div>
+{{> rightnav url=next}}

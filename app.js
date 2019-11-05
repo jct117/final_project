@@ -24,10 +24,8 @@ app.listen(PORT, () => console.log(`App is up and running listening on port ${PO
 // route handler for GET request to home ("/") route
 app.get('/', (req, res, next) => {
   // "render" the template named "home" in our views folder
-
-
   res.render('home', {
-    progressBar:'<a href="/"><li class="active"></li></a>'
+
   })
 })
 
@@ -43,7 +41,8 @@ app.get('/class', (req, res, next) => {
   // "render" the template named "home" in our views folder
   res.render('class', {
     next: "/background",
-    previous: "/race"
+    previous: "/race",
+    
   })
 })
 

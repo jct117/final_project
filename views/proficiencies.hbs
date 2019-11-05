@@ -1,13 +1,13 @@
 <div id="leftButton"><button class="navArrow"><a class="link" href="/ability"><img src="img/chevron-left.png"></a></button> </div>
       <div id="main">
-        <content class="class">
-          <div id="win6" class="contour" style="">
+        <content class="class" data-page-number=5>
+          <div id="win6" class="contour">
 
 			<h2>Proficiencies</h2>
               <p>Choose the character's skills and languages.</p>
-			<div id="competences">
+			<div id="proficiencies">
                 <h3>Class skills</h3>
-                <select id="comp1_0" name="comp_1">
+                <select id="dropdown1" name="comp_1">
                     <option value="0">Acrobatics</option>
                     <option value="4">Animal Handling</option>
                     <option value="2">Athletics</option>
@@ -16,7 +16,7 @@
                     <option value="7">Intimidation</option>
                     <option value="12">Perception</option>
                     <option value="16">Survival</option></select>
-                <select id="comp1_1" name="comp_1">
+                <select id="dropdown2" name="comp_1">
                     <option value="0">Acrobatics</option>
                     <option value="4">Animal Handling</option>
                     <option value="2">Athletics</option>
@@ -27,14 +27,14 @@
                     <option value="16">Survival</option>
                 </select>
                 <h3>Background skills</h3>
-                <select id="comp2_0" name="comp_2" class="gris">
+                <select id="dropdown3" name="comp_2" class="gris">
                     <option value="4">Animal Handling</option>
                 </select>
-                <select id="comp2_1" name="comp_2" class="gris">
+                <select id="dropdown4" name="comp_2" class="gris">
                     <option value="16">Survival</option>
                 </select>
                 <h3>Background tools</h3>
-                <select id="tool2_0" name="tool_2">
+                <select id="dropdown5" name="tool_2">
                     <option value="alchemist's supplies">Alchemist's supplies</option>
                     <option value="brewer's supplies">Brewer's supplies</option>
                     <option value="calligrapher's supplies">Calligrapher's supplies</option>
@@ -53,14 +53,14 @@
                     <option value="weaver's tools">Weaver's tools</option>
                     <option value="woodcarver's tools">Woodcarver's tools</option>
                 </select>
-                <select id="tool2_1" name="tool_2" class="gris">
+                <select id="dropdown6" name="tool_2" class="gris">
                     <option value="vehicles (land)">Vehicles (land)</option>
                 </select>
                 <h3>Race languages</h3>
-                <select id="lang0_0" name="lang_0" class="gris">
+                <select id="dropdown7" name="lang_0" class="gris">
                     <option value="0">Common</option>
                 </select>
-                <select id="lang0_1" name="lang_0">
+                <select id="dropdown8" name="lang_0">
                     <option value="0" disabled="disabled">Common</option>
                     <option value="6">Dwarf</option>
                     <option value="1">Elvish</option>
@@ -81,11 +81,11 @@
               </div>
 
 		</div>
-        </content>
+    </content>
 
 
-      <div id="notes">notes section
-          <p>Test words for stuff</p>
-          </div>
-      </div>
-      {{> rightnav url=next}}
+    <div><h3>Description</h3>
+      <p id="notes"></p>
+    </div>
+  </div>
+{{> rightnav url=next}}
