@@ -97,7 +97,7 @@ a {
 
 .progressBar li {
     list-style-type: none;
-    width: 8%;
+    width: 9.6%;
     float:left;
     position: relative;
     text-align: center;
@@ -204,7 +204,7 @@ section:after {
     right: 400px; */
     height: 80%;
     min-width: 20%;
-    width: 350px;
+    width: 550px;
     white-space: pre-wrap;
     white-space: -moz-pre-wrap;
     white-space: -pre-wrap;
